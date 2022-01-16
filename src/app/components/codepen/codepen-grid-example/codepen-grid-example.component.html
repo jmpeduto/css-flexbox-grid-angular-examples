@@ -11,8 +11,8 @@
       <h4><a target="_blank" href="http://w3.unpocodetodo.info/css3/flex-direction.php">flex-direction: (default "row")</a></h4>
       <p class="description">Establece el eje principal del contenedor y su sentido</p>
       <div class="radio">
-        <input name="flex-direction" type="radio" class="flex-direction" id="R11" value="row" checked><label for="R11">row:</label>
-        <input name="flex-direction" type="radio" class="flex-direction" id="R12" value="row-reverse"><label for="R12">row-reverse:</label>
+        <input name="flex-direction" (change)="changeFlex($event.target, 'flex-container', 'direction')" type="radio" class="flex-direction" id="R11" value="row" checked><label for="R11">row:</label>
+        <input name="flex-direction" (change)="changeFlex($event.target, 'flex-container', 'direction')" type="radio" class="flex-direction" id="R12" value="row-reverse"><label for="R12">row-reverse:</label>
         <input name="flex-direction" type="radio" class="flex-direction" id="R13" value="column"><label for="R13">column:</label>
         <input name="flex-direction" type="radio" class="flex-direction" id="R14" value="column-reverse"><label for="R14">column-reverse:</label>
       </div>
